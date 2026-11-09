@@ -1,6 +1,6 @@
 @echo off
-chcp 65001 >nul
-title И╚≤Ф∙┬Д╨╓Д╨▓Е╧ЁЕ▐╟ б╥ Х┤╙Фё─
+chcp 936 >nul
+title ╦ъп╖╫╩╩╔ф╫л╗ ║╓ вт╪Л
 cd /d "%~dp0.."
 
 set "PY="
@@ -9,11 +9,11 @@ if not defined PY for %%I in ("%~dp0..\..\xnj\python311\python.exe") do if exist
 if not defined PY for %%P in (python.exe) do if not "%%~$PATH:P"=="" set "PY=%%~$PATH:P"
 
 if not defined PY (
-    echo Ф╡║Ф°┴Ф┴╬Е┬╟ python.exeО╪┬Е╨■Д╫█Д╨▌Е░▄Г⌡≤ xnj\python311\О╪┴
+    echo ц╩спур╣╫ python.exeё╗с╕н╩сзм╛ел xnj\python311\ё╘
     pause
     exit /b 1
 )
 
-"%PY%" -S "%~dp0Х┤╙Фё─.py"
+"%PY%" -S "%~dp0selfcheck.py"
 echo.
 pause
