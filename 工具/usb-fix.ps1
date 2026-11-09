@@ -68,7 +68,7 @@ function Get-AdbInterfaces {
             }
         }
     }
-    return ,$result
+    return $result
 }
 
 function Test-AdbGuidRegistered {
